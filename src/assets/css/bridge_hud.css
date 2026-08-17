@@ -1,0 +1,44 @@
+/* BRIDGE HUD - transparent command interface */
+
+body.bridgeHUD {
+    background: transparent !important;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+}
+
+#boot_screen {
+    background: transparent !important;
+}
+
+.bridge-overlay {
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #ffffff;
+}
+
+.bridge-title {
+    color: #ffffff;
+    letter-spacing: 8px;
+    font-weight: 300;
+}
+
+.bridge-status {
+    color: rgba(255,255,255,0.75);
+}
+
+.bridge-online {
+    color: #8fffc1;
+}
+
+.bridge-module {
+    border: 1px solid rgba(255,255,255,0.16);
+    background: rgba(0,0,0,0.18);
+    transition: all .25s ease;
+}
+
+.bridge-module:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.45);
+}
