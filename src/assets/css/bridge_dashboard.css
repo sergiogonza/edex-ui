@@ -1,0 +1,49 @@
+/* BRIDGE COMMAND CENTER */
+
+.bridge-command-center {
+ position:fixed;
+ inset:30px;
+ display:grid;
+ grid-template-columns:260px 1fr 260px;
+ grid-template-rows:auto 1fr auto;
+ gap:16px;
+ color:white;
+}
+
+.bridge-card {
+ background:rgba(0,0,0,.20);
+ border:1px solid rgba(255,255,255,.18);
+ backdrop-filter:blur(15px);
+ padding:18px;
+}
+
+.bridge-card h3 {
+ font-weight:300;
+ letter-spacing:4px;
+}
+
+.bridge-actions {
+ display:flex;
+ gap:15px;
+ justify-content:center;
+}
+
+.bridge-button {
+ padding:12px 25px;
+ border:1px solid rgba(255,255,255,.3);
+ background:rgba(255,255,255,.05);
+ color:white;
+ cursor:pointer;
+}
+
+.bridge-button:hover {
+ background:rgba(255,255,255,.12);
+}
+
+.bridge-globe {
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:90px;
+ opacity:.8;
+}
