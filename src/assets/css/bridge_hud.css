@@ -6,91 +6,70 @@ body.bridgeHUD {
     font-family: 'JetBrains Mono', 'Fira Mono', monospace;
 }
 
-#boot_screen {
-    background: transparent !important;
-}
+#boot_screen { background: transparent !important; }
 
 .bridge-boot {
     position: fixed;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.18);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    color:#ffffff;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.18);
+    backdrop-filter:blur(14px);
+    color:#fff;
     text-align:center;
 }
 
-.bridge-logo {
-    font-size:72px;
-    color:#ffffff;
-    text-shadow:0 0 25px rgba(255,255,255,.35);
-    animation: bridgePulse 3s infinite ease-in-out;
-}
-
-.bridge-name {
-    margin-top:20px;
-    font-size:34px;
-    letter-spacing:12px;
-    font-weight:300;
-}
-
-.bridge-subtitle {
-    margin-top:10px;
-    color:rgba(255,255,255,.7);
-    letter-spacing:5px;
-}
-
-.bridge-status {
-    margin-top:45px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    color:rgba(255,255,255,.8);
-}
-
-.bridge-enter {
-    margin-top:55px;
-    padding:14px 35px;
-    border:1px solid rgba(255,255,255,.35);
-    background:rgba(255,255,255,.04);
-    cursor:pointer;
-    letter-spacing:4px;
-}
+.bridge-logo {font-size:72px;color:#fff;text-shadow:0 0 25px rgba(255,255,255,.35);animation:bridgePulse 3s infinite;}
+.bridge-name {margin-top:20px;font-size:34px;letter-spacing:12px;font-weight:300;}
+.bridge-subtitle {margin-top:10px;color:rgba(255,255,255,.7);letter-spacing:5px;}
+.bridge-status {margin-top:45px;display:flex;flex-direction:column;gap:10px;color:rgba(255,255,255,.8);}
+.bridge-enter {margin-top:55px;padding:14px 35px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.04);cursor:pointer;letter-spacing:4px;}
 
 .bridge-overlay {
-    background: rgba(0,0,0,0.22);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.18);
-    color: #ffffff;
+ background:rgba(0,0,0,.22);
+ backdrop-filter:blur(12px);
+ border:1px solid rgba(255,255,255,.18);
+ color:#fff;
 }
 
-.bridge-title {
-    color: #ffffff;
-    letter-spacing: 8px;
-    font-weight: 300;
+.bridge-dashboard {
+ position:absolute;
+ inset:40px;
+ display:grid;
+ grid-template-columns:250px 1fr 250px;
+ grid-template-rows:1fr 90px;
+ gap:20px;
 }
 
-.bridge-online {
-    color: #8fffc1;
+.bridge-panel {
+ padding:20px;
+ background:rgba(0,0,0,.18);
+ backdrop-filter:blur(12px);
+ border:1px solid rgba(255,255,255,.16);
+}
+
+.bridge-center {
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ font-size:80px;
 }
 
 .bridge-module {
-    border: 1px solid rgba(255,255,255,0.16);
-    background: rgba(0,0,0,0.18);
-    transition: all .25s ease;
+ cursor:pointer;
+ transition:.25s ease;
 }
 
 .bridge-module:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(255,255,255,0.45);
+ background:rgba(255,255,255,.08);
+ border-color:rgba(255,255,255,.45);
 }
 
+.bridge-online {color:#8fffc1;}
+
 @keyframes bridgePulse {
-    0%,100% {opacity:.7;}
-    50% {opacity:1;}
+ 0%,100%{opacity:.7}
+ 50%{opacity:1}
 }
