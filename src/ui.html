@@ -5,7 +5,6 @@
         <meta http-equiv="Content-Security-Policy" content="default-src file: 'unsafe-inline'; img-src file: data:; media-src file:; connect-src ws: file:">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BRIDGE HUD</title>
-
         <link rel="stylesheet" href="node_modules/augmented-ui/augmented.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/modal.css" />
@@ -13,7 +12,6 @@
         <link rel="stylesheet" href="assets/css/bridge_hud.css" />
         <link rel="stylesheet" href="assets/css/main_shell.css" />
         <link rel="stylesheet" href="assets/css/filesystem.css" />
-
         <link rel="stylesheet" href="assets/css/mod_column.css" />
         <link rel="stylesheet" href="assets/css/mod_clock.css" />
         <link rel="stylesheet" href="assets/css/mod_sysinfo.css" />
@@ -25,6 +23,7 @@
         <link rel="stylesheet" href="assets/css/mod_ramwatcher.css" />
         <link rel="stylesheet" href="assets/css/mod_toplist.css" />
         <link rel="stylesheet" href="assets/css/mod_processlist.css" />
+        <link rel="stylesheet" href="assets/css/bridge_dashboard.css" />
 
         <script src="node_modules/pdfjs-dist/build/pdf.js"></script>
         <script src="classes/modal.class.js"></script>
@@ -44,17 +43,14 @@
         <script src="classes/toplist.class.js"></script>
         <script src="classes/processlist.class.js"></script>
         <script src="classes/audiofx.class.js"></script>
+        <script src="bridge_dashboard.js"></script>
     </head>
     <body class="bridgeHUD">
         <section id="bridge_boot" class="bridge-boot">
             <div class="bridge-logo">◈</div>
             <div class="bridge-name">BRIDGE HUD</div>
             <div class="bridge-subtitle">COMMAND INTERFACE</div>
-            <div class="bridge-status">
-                <span>CORE ........ READY</span>
-                <span>NETWORK ..... READY</span>
-                <span>TERMINAL .... READY</span>
-            </div>
+            <div class="bridge-status"><span>CORE ........ READY</span><span>NETWORK ..... READY</span><span>TERMINAL .... READY</span></div>
             <div class="bridge-enter">CLICK TO ENTER</div>
         </section>
         <section id="boot_screen"></section>
